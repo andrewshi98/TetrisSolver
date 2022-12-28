@@ -1,11 +1,14 @@
 package tBoard
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/andrewshi98/TetrisSolver/tetris/config"
+)
 
 type Board struct {
 	w     int
 	h     int
-	board []int16
+	board []config.YData
 }
 
 func MakeBoard(w int, h int) (*Board, error) {
